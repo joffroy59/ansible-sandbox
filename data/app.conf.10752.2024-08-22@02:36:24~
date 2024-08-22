@@ -8,6 +8,6 @@
 
     #  code here
 
-    RewriteEngine On
+    # RewriteEngine On
 
 </VirtualHost>

@@ -10,3 +10,13 @@
     insertafter: '^## MyModule'
     backup: true
 
+- name: "Install module"
+  ansible.builtin.lineinfile:
+    path: "{{ apache_conf_app_conf }}"
+    state: present
+    regexp: '^(.*)#.*(RewriteEngine .*)'
+    backrefs: true
+    line: '\1\2'
+    insertafter: '#  code here'
+    backup: true
+
