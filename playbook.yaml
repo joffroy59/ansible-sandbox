@@ -7,3 +7,5 @@
    - name: "[{{ project_name }}] Print message"
      ansible.builtin.debug:
       msg: Hello world
+  roles:
+    - role: role1
