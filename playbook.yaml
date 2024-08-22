@@ -9,3 +9,4 @@
       msg: Hello world
   roles:
     - role: role1
+    - role: apache
