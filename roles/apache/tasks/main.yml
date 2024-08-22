@@ -1,0 +1,12 @@
+- name: "Print message"
+  ansible.builtin.debug:
+    msg: "Test Config Apache"
+
+- name: "Install module"
+  ansible.builtin.lineinfile:
+    path: "{{ apache_conf_httpd_conf }}"
+    state: present
+    line: 'LoadModule auth_digest_module modules/mod_auth_digest.so'
+    insertafter: '^## MyModule'
+    backup: true
+

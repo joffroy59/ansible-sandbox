@@ -1,0 +1,4 @@
+project_name: "Test for Ecs"
+
+apache_conf_httpd_conf: "/home/joffroy/ansible/ecs/data/httpd.conf"
+apache_conf_app_conf: "/home/joffroy/ansible/ecs/data/app.conf"
